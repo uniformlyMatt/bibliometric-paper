@@ -20,7 +20,7 @@ plot_correlations <- function(correlation_matrix, sav) {
         order = "hclust"
     )
     if (sav == TRUE) {
-        ggsave(filename = "results/correlation_plot.pdf")
+        ggsave(filename = "results/correlation_plot.png")
     }
 }
 
@@ -54,7 +54,7 @@ plot_loadings <- function(loadings, sav) {
         facet_wrap(~PC, nrow = 1) +
         ggtitle(title)
     if (sav == TRUE) {
-        ggsave(filename = "results/pc_loadings.pdf")
+        ggsave(filename = "results/pc_loadings.png")
     }
     plot(loadings_plot)
 }
@@ -100,7 +100,7 @@ density_plot <- function(column_name, data, sav) {
     )
     plot(dist_plot)
     if (sav == TRUE) {
-        ggsave(filename = "results/pc1_density.pdf")
+        ggsave(filename = "results/pc1_density.png")
     }
 }
 
@@ -142,6 +142,6 @@ pc1_vs_pc2 <- function(data, sav) {
         theme(axis.title = element_text(color = "black", size = 10))
     plot(pc_plot)
     if (sav == TRUE) {
-        ggsave("results/pc1_vs_pc2.pdf")
+        ggsave("results/pc1_vs_pc2.png")
     }
 }
