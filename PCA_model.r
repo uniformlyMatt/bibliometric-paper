@@ -1,4 +1,6 @@
-# Performing PCA with author count variables
+##############################################
+# Performing PCA with author count variables #
+##############################################
 
 # load the required packages
 library("ggplot2")
